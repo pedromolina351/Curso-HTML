@@ -1,0 +1,33 @@
+body {
+    background-color: #fdfd96;
+    padding: 25px;
+}
+
+.cuadro {
+    height: 200px;
+}
+
+#rojo {
+    background-color: #ff6961;
+}
+#verde {
+    background-color: #77dd77;
+}
+#azul {
+    background-color: #84b6f4;
+}
+#rosa {
+    background-color: #fdcae1;
+}
+
+/* @media (max-width: 600px) {
+    .cuadro {
+        width: 100%;
+    }
+} */
+/* @media (min-width: 600px) {
+    .cuadro {
+        width: 100%;
+    }
+} */
+

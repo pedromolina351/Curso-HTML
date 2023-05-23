@@ -1,0 +1,34 @@
+Bootstrap cuenta internamente con una herramienta o un sistema de cuadrícula que su función principal es organizar el contenido html que se muestra en la pantalla, esta era una tarea compleja tiempo atrás porque no existia una manera versátil para cambiar la disposición de los elementos, a tal punto que, se llegaban a utilizar tablas HTML para poder organizar el contenido de un sitio, lo cual no era para nada óptimo, ya que a diferencia de otros elementos contenedores que conocemos hoy en día, las tablas no eran para nada flexibles y nada adaptables para un diseño responsive.
+
+Nosotros ya conocimos 2 clases css que nos ayudan a distribuir los elementos html de manera dinámica y estas son flexbox y grid. 
+
+Hoy vamos a explorar cómo hace bootstrap esta función de detectar el tamaño del dispositivo y dependiendo de eso, organizar el contenido.
+
+Vamos a crear 4 componentes div, y asignar varios estilos
+    width: 200px;
+    height: 200px;
+    border-radius: 6%;
+    margin: 10px;
+
+y dar color de fondo a cada uno.
+
+Ahora vamos a dar valor de width 100% y se ajustara al 100% del ancho disponible de la pantalla.
+    width: 100%;
+
+Ahora si queremos que abarque la cuarta parte de nuestra pantalla le damos 
+    width: 25%;
+Esto va a hacer que el ultimo cuadro se corra, debido a que en el ancho de los componentes html no se incluyen borde ni padding, para resolver esto es con la propiedad
+    border-box
+
+Ahora, cuando reducimos el tamaño de la pantalla vemos que se van estirando lo cual no es óptimo, lo mejor sería tenerlos todos en 100%
+
+Lo que hace bootstrap es tener distintas consultas a medios con @media para identificar los diferentes tipos de dispositivos, sería tedioso hacer esto manualmente para cada elemento o clase que tengamos ya que existen tantos dispositivos.
+
+El sistema de grillas de bootstrap divide la pantalla en 12 columnas de igual tamaño, es decir, el tamaño de cada columna es 1/12 del ancho disponible de la pantalla y nosotros decidimos cuantas columnas de esas 12 queremos que abarque cada elemento o bloque de contenido.
+
+Entonces podríamos por ejemplo decir que un contenedor abarque 4 columnas de bootstrap en dispositivos grandes, pero para móviles solamente abarque 12, etc.
+El 100% en bootstrap es 12 columnas.
+3 columnas bootstrap sería el 25% de la pantalla.
+
+
+

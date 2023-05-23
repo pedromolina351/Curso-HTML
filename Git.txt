@@ -1,0 +1,25 @@
+Crear un nuevo repositorio
+*Readme: es un archivo que contiene información del proyecto, como una breve descripción, 
+cómo instalarlo, cómo configurarlo, cómo ejecutarlo, entre otros aspectos básicos.
+
+Para utilizarlo en nuestra pc podríamos descargar un archivo comprimido que lo contenga o 
+bien podríamos clonar dicho repositorio directamente en una carpeta dentro de nuestra pc. 
+
+Para hacer esto es necesario tener instalado el git CLI(command line interface) esto lo hacemos 
+en la página oficial de git en nuestro caso, para windows.
+
+Ahora crear una carpeta, abrirla en el cmd y ejecutar el comando git clone y la url del repositorio.
+
+Crear un archivo de texto y escribir holamundo dentro de el, luego probar el comando git status, 
+el cual nos dice si en nuestro repositorio local existen cambios que no estan guardados el el staging area. 
+
+Para agregarlo lo hacemos con git add archivo.txt o git add .
+Volvemos a hacer cambios en el txt y damos git diff para ver las diferencias del archivo.
+
+para enviarlo al staging area lo hacemos con git commit o git commit -m "mensaje" 
+
+Por ultimo para subir al repositorio, lo hacemos con git push, acá nos va a pedir 
+nuestro usuario y contraseña de git hub si no estamos logeados.
+
+Ahora vamos al gitHub y verificamos los cambios 
+Estos son los comandos mas básicos.

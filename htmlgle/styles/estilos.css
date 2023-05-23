@@ -1,0 +1,176 @@
+/*Para declarar una variable en CSS, se utiliza la sintaxis
+ --nombre-variable: valor;, donde nombre-variable es el 
+ nombre que se le dará a la variable y valor es el valor 
+ que se le asignará. En tu caso, para declarar una variable 
+ llamada --color-primario con el valor #5C76E9*/
+:root {
+    /*La pseudo-clase :root se utiliza para establecer 
+    la variable en el ámbito global de la hoja de estilo, 
+    lo que significa que se puede utilizar en cualquier 
+    parte del documento.*/
+    --color-azul: #5482E8;
+  }
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#contenedor-principal {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        /*  transform: es una propiedad de CSS que permite transformar el 
+        elemento. Se puede utilizar para rotar, escalar, mover o deformar 
+        el elemento. Por ejemplo, si utilizamos transform: translateX(-50%), 
+        estamos moviendo el elemento hacia la izquierda en un 50% de su ancho.*/
+        transform: translate(-50%, -50%);
+        border: 1px solid #9e9e9e;
+        /*La propiedad border-radius acepta uno o dos valores. 
+        Si se proporciona un solo valor, este se aplica a todas 
+        las esquinas del elemento. Si se proporcionan dos valores, 
+        el primero se aplica a las esquinas superiores y el segundo 
+        a las inferiores. Los valores pueden ser porcentajes o 
+        medidas absolutas, como píxeles o em.*/
+        border-radius: 5px;
+        min-height: 500px;
+        height: auto;
+}
+
+#logo {
+    width: 70px;
+    /*La propiedad margin tiene cuatro valores posibles que
+     se pueden ajustar individualmente o en conjunto: 
+     margin-top, margin-right, margin-bottom, y margin-left.
+     
+     si solo le damos 2 valores, el primero lo va a tomar como
+     arriba-abajo y el segundo izquierda-derecha
+     */
+    margin-top: 35px;
+    margin-bottom: 25px;
+}
+
+#contenedor-elementos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.texto {
+    /*em se refiere al tamaño de fuente actual del elemento, 
+    lo que significa que el tamaño de 1em depende del tamaño de la fuente
+    del elemento padre más cercano. Por ejemplo, si la fuente del elemento padre 
+    es de 16px, entonces 1em será igual a 16px. Si el tamaño de fuente
+    del elemento padre es 20px, entonces 1em será igual a 20px. 
+    También se puede usar em para especificar otras dimensiones, como 
+    márgenes, rellenos, anchuras, alturas, etc. En este caso, el valor em se calcula
+    a partir del tamaño de fuente del elemento padre.
+    
+    rem se basa en el tamaño de la raiz fuente del documento html
+    y no del elemento padre*/
+    font-size: 1rem;
+    font-family: sans-serif;
+    margin: 0;
+}
+
+#txt-correo {
+    border-radius: 4px;
+    /*border se utiliza para establecer un borde alrededor 
+    del contenido de un elemento HTML*/
+    border: 1px solid rgb(185, 185, 185);
+    /*se utiliza para definir un borde que rodea 
+    el contorno exterior de un elemento HTML, 
+    pero que no está afectado por el tamaño o la 
+    posición del elemento.*/
+    outline: 0;
+    width: 95%;
+    padding: 15px 10px;
+    margin-bottom: 7px;
+}
+
+#txt-correo:focus  {
+    /*Para utilizar esta variable dentro de un selector, 
+    se puede utilizar la sintaxis var(--nombre-variable).*/
+    border: 2.3px solid var(--color-azul);
+    outline: 0;
+}
+
+.formulario {
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    margin-top: 35px;
+    /*Aplicar despues de escribir el párrafo ¿Olvidaste tu correo?*/
+    flex-direction: column;
+}
+
+#pregunta {
+    color: var(--color-azul);
+}
+
+#label-info {
+    color: var(--color-azul);
+}
+
+/*Enseñar acerca de la propiedad transition
+Es una propiedad css que nos ayuda a hacer las transiciones
+de efectos mas suaves, se tiene que configurar para otros
+navegadores en caso que los usemos (mozila,opera)
+
+recibe 3 valores, primero es la propiedad que queremos que tenga
+transicion (color, font-size, etc) luego, el tiempo que se va 
+a tardar y por ultimo el efecto, si es ease-in es para que 
+la transicion de entrada sea suavizada, ease-out para la 
+transicion de salida o ambas con ease-in-out
+transition: background-color 1s ease-in-out;
+
+Si quisieramos que no solo una propiedad se aplique en la 
+transicion sino cualquier tipo de estilo, utilizamos all*/
+
+#parrafo {
+    color: #64799D;
+    margin-top: 15%;
+}
+
+#contenedor-botones {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Aplicar estilos a varios selectores*/
+/* #boton1, .boton2 {
+    background-color: #5C76E9;
+}  */
+
+/*Aplicar estilo a varios elementos del mismo tipo*/
+/* #contenedor-botones button{
+    background-color: #5C76E9;
+} */
+#boton1, #boton2 {
+    border: 0;
+    height: 39px;
+    width: 125px;
+    border-radius: 5%;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+#boton1 {
+    background-color: white;
+    color: var(--color-azul);
+    /*El font-weight en CSS se mide utilizando valores numéricos
+     que van desde 100 a 900 en incrementos de 100. También se 
+     pueden utilizar los valores normal y bold.
+    El valor normal se traduce como "400" y el valor bold se 
+    traduce como "700". Los valores entre 100 y 500 suelen ser 
+    más ligeros, mientras que los valores entre 600 y 900 suelen 
+    ser más gruesos.*/
+
+
+}
+
+#boton1:hover {
+    background-color: rgb(241, 241, 241);
+    cursor: pointer;
+    
+}

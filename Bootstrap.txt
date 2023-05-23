@@ -1,0 +1,17 @@
+Dentro del diseño de toda página web existen 3 componentes fundamentales de los cuales ya conocemos 2, HTML que es el lenguaje de marcado, CSS que es un lenguaje de estilos para poder modificar la apariencia visual de una página web aplicando estilos de distintas maneras, eventos, etc. Y por último está javascript, que nos sirve para darle dinamismo a una página web. Entonces tenemos estos 3 componentes los cuales bootstrap los unifica en elementos que pertenecen a su biblioteca de estilos predefinidos.
+
+"navbar-expand-lg" indica que la barra de navegación se expandirá en dispositivos grandes (lg).
+
+bg-body-tertiary es una clase de Bootstrap que se utiliza para establecer el color de fondo de un elemento en un tono terciario
+
+container-fluid es una clase de Bootstrap que se utiliza para crear un contenedor de ancho completo que se extiende por todo el ancho de la pantalla del dispositivo en el que se visualiza el sitio web. A diferencia de la clase container, que tiene un ancho fijo, la clase container-fluid utiliza un ancho fluido que se adapta al ancho del viewport.
+
+data-bs-toggle es un atributo utilizado para activar o desactivar una funcionalidad específica de Bootstrap en un elemento HTML determinado.
+El atributo data-bs-toggle="collapse" se utiliza para identificar el elemento que se debe colapsar o expandir cuando se activa el evento de clic, mientras que el atributo data-bs-target se utiliza para especificar el selector del elemento que se colapsará o expandirá.
+
+En el ejemplo que mencionas, data-bs-toggle="collapse" se utiliza para habilitar la funcionalidad de colapso en el menú de navegación, mientras que data-bs-target="#navbarSupportedContent" se utiliza para especificar el elemento del menú que se colapsará o expandirá cuando se haga clic en el botón de hamburguesa.
+
+
+
+
+

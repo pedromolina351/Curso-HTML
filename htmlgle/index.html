@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <link rel="stylesheet" href="styles/estilos.css">
+</head>
+<body>
+    <!-- Cuando definimos la propiedad absolute, estamos hablando que el elemento con esta propiedad se está posicionando en base
+        a otro elemento que toma de referencia (padre, que si no tiene uno, es el body) 
+    
+        El elemento padre div1 debe tener position relative y el elemento hijo div2 position absolute
+        <div id="div1">
+            <div id="div2">
+            </div>
+        </div> -->
+    <main id="contenedor-principal">
+        <div id="contenedor-elementos">
+            <img id="logo" src="google.svg" alt="logo">
+            <b class="texto">Acceder</b>
+            <p class="texto">Utiliza tu cuenta de Google</p>
+            <form class="formulario">
+                <input type="text" id="txt-correo" placeholder="Correo electrónico o teléfono">
+                <b id="pregunta">¿Olvidaste el correo electrónico?</b>
+                <p id="parrafo">¿Esta no es tu computadora? Usa el modo de invitado para navegar de forma privada. <b id="label-info">Más información</b></p>
+                <div id="contenedor-botones">
+                    <button id="boton1">Crear cuenta</button>
+                    <button id="boton2">Siguiente</button>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
